@@ -6,7 +6,7 @@ function Footer() {
       <div class="footer form-div">
         <form action=""></form>
       </div>
-      <p class="footer text">&copy; 2026 By Cesvic07 </p>
+      <p class="footer text">&copy; 2026 Cesvic07 </p>
     </footer>
   )
 }

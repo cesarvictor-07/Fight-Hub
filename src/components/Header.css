@@ -1,8 +1,21 @@
 .header {
   background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text {
   text-align: center;
   color: white;
+}
+
+.logo{
+  padding-left: 20px;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  padding-right: 0.75rem;
 }

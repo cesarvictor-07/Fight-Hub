@@ -7,7 +7,7 @@ import Mk1Home from './pages/Mk1Home';
 import Fruits from './pages/Fruits';
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-// import './App.css'
+import './App.css'
 
 
 function App() {

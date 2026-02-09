@@ -1,10 +1,16 @@
 import "./Header.css"
 
+
+
 function Header() {
   return(
-    <header>
-      <img src="" alt="Logo" />
-      <p class="header text">Fight Hub™</p>
+    <header className="header">
+      <img src="" alt="Logo" className="logo"/>
+      <div className="header links">
+        <p className="links text">Log In</p>
+        <p className="links text">Sign Up</p>
+        <p className="links text">Contact Us</p>
+      </div>
     </header>
   )
 }
