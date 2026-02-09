@@ -1,0 +1,56 @@
+
+.button {
+  height: 8rem;
+  width: 17rem;
+  margin: 0.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  transition: 1s;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  transform: scale(1.03);
+}
+
+.logo{
+  scale: calc(0.75);
+}
+
+/* Imagenes */
+.smash {
+  background-image: url(/src/components/img/everyoneishere.webp);
+}
+
+.sf6 {
+  background-image: url(/src/components/img/street-fighter-6-2048x2048-9757.jpg);
+}
+
+.tekken {
+  background-image: url(/src/components/img/TEKKEN8img.jpg);
+}
+
+.mk1 {
+  background-image: url(/src/components/img/mk1img.webp);
+}
+
+.home{
+background-image: url(/src/components/img/Fight\ Hub.png);
+}
