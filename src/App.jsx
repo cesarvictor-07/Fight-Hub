@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import SsbuHome from './pages/SsbuHome';
-import Sf6Home from './pages/Sf6Home';
-import Tekken8Home from './pages/Tekken8Home';
-import Mk1Home from './pages/Mk1Home';
+import Home from './pages/home/Home';
+import Ssbu from './pages/ssbu/Ssbu';
+import Sf6 from './pages/sf6/Sf6';
+import Tekken8 from './pages/tekken8/Tekken8';
+import Mk1 from './pages/mk1/Mk1';
 import Fruits from './pages/Fruits';
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
@@ -17,10 +17,10 @@ function App() {
         <Routes>
           <Route path="*" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/SsbuHome" element={<SsbuHome />} />
-          <Route path="/Tekken8Home" element={<Tekken8Home />} />
-          <Route path="/Sf6Home" element={<Sf6Home />} />
-          <Route path="/Mk1Home" element={<Mk1Home />} />
+          <Route path="/Ssbu" element={<Ssbu />} />
+          <Route path="/Tekken8" element={<Tekken8 />} />
+          <Route path="/Sf6" element={<Sf6 />} />
+          <Route path="/Mk1" element={<Mk1 />} />
           <Route path="/fruits" element={<Fruits />} />
         </Routes>
       </BrowserRouter>

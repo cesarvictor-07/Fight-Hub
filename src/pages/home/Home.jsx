@@ -1,22 +1,22 @@
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
-import "../components/Home.css"
+import Header from "../../components/Header";
+import "./Home.css";
 
 function Home() {
   const navigate = useNavigate();
 
   const SsbuGo = () => {
-    navigate("/SsbuHome");
+    navigate("/Ssbu");
   }
   const Sf6Go = () => {
-    navigate("/Sf6Home");
+    navigate("/Sf6");
   }
   const T8Go = () => {
-    navigate("/Tekken8Home");
+    navigate("/Tekken8");
   }
   const Mk1Go = () => {
-    navigate("/Mk1Home");
+    navigate("/Mk1");
   }
   return (
     <div className="page">
@@ -30,6 +30,11 @@ function Home() {
         <button className="button tekken" onClick={T8Go}>Go to Tekken 8 page</button>
         <button className="button mk1" onClick={Mk1Go}>Go to Mortal Kombat 1 page</button>
       </div>
+      <section className="about-section">
+        <h1>About us</h1>
+        <p>Here in fight hub you can checkout a bunch of your favourite fighting games, see the game mechanichs, characters and more!</p>
+
+      </section>
       <Footer />
     </div>
   );
