@@ -14,18 +14,20 @@ function Sf6() {
   return (
     <>
       <Header />
-      <h1 className="title-text">Street Fighter 6</h1>
-      <p>The sixth entry of the most popular fighting game franchise ever!</p>
-      <section className="fighter-grid">
-        {sf6Fighters.map(fighter => (
-          <FighterCard
-            key={fighter.id}
-            fighter={fighter}
-            backgroundClass="sf6-background"
-          />
-        ))}
+      <section className="sf-content">
+        <h1 className="title-text">Street Fighter 6</h1>
+        <p>The sixth entry of the most popular fighting game franchise ever!</p>
+        <section className="fighters-grid">
+          {sf6Fighters.map(fighter => (
+            <FighterCard
+              key={fighter.id}
+              fighter={fighter}
+              backgroundClass="sf6-background"
+            />
+          ))}
+        </section>
+        <button className="button home" onClick={handleClick}>Go back to home page</button>
       </section>
-      <button className="button home" onClick={handleClick}>Go back to home page</button>
       <Footer />
     </>
   );

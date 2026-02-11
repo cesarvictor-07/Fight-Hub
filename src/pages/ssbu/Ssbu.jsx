@@ -14,17 +14,20 @@ function Ssbu() {
   return (
     <>
       <Header />
-      <h1 className="title-text">Super Smash Bros. Utlimate</h1>
-      <section className="fighter-grid">
-        {ssbuFighters.map(fighter => (
-          <FighterCard
-            key={fighter.id}
-            fighter={fighter}
-            backgroundClass="smash-background"
-          />
-        ))}
+      <section className="smash-content">
+        <h1 className="title-text">Super Smash Bros. Utlimate</h1>
+        <h2>Some characters inside the game:</h2>
+        <section className="fighters-grid">
+          {ssbuFighters.map(fighter => (
+            <FighterCard
+              key={fighter.id}
+              fighter={fighter}
+              backgroundClass="smash-background"
+            />
+          ))}
+        </section>
+        <button className="button home" onClick={handleClick}>Go back to home page</button>
       </section>
-      <button className="button home" onClick={handleClick}>Go back to home page</button>
       <Footer />
     </>
   );

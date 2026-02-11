@@ -16,5 +16,11 @@ export const ssbuFighters = [
     name: "Terry",
     image: "",
     description: "The hungry wolf from Southtown"
+  },
+  {
+    id: 4,
+    name: "King K. Rool",
+    image: "",
+    description: "The Kremmling Kommander"
   }
 ];

@@ -14,17 +14,19 @@ function Tekken8() {
   return (
     <>
       <Header />
-      <h1 className="title-text">Tekken 8</h1>
-      <section className="fighter-grid">
-        {tekken8Fighters.map(fighter => (
-          <FighterCard
-            key={fighter.id}
-            fighter={fighter}
-            backgroundClass="tekken-background"
-          />
-        ))}
+      <section className="tekken-content">
+        <h1 className="title-text">Tekken 8</h1>
+        <section className="fighters-grid">
+          {tekken8Fighters.map(fighter => (
+            <FighterCard
+              key={fighter.id}
+              fighter={fighter}
+              backgroundClass="tekken-background"
+            />
+          ))}
+        </section>
+        <button className="button home" onClick={handleClick}>Go back to home page</button>
       </section>
-      <button className="button home" onClick={handleClick}>Go back to home page</button>
       <Footer />
     </>
   );

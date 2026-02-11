@@ -22,7 +22,7 @@ function Home() {
     <div className="page">
       <Header />
       <div className="title">
-        <h1 className="main-text">Welcome to Fight Hub</h1>
+        <h1 className="main-text">Welcome to Fight Hub!</h1>
       </div>
       <div className="button-container">
         <button className="button smash" onClick={SsbuGo}>Go to Smash Bros Ultimate page</button>
@@ -30,10 +30,14 @@ function Home() {
         <button className="button tekken" onClick={T8Go}>Go to Tekken 8 page</button>
         <button className="button mk1" onClick={Mk1Go}>Go to Mortal Kombat 1 page</button>
       </div>
-      <section className="about-section">
+      <section id="about" className="about-section">
         <h1>About us</h1>
         <p>Here in fight hub you can checkout a bunch of your favourite fighting games, see the game mechanichs, characters and more!</p>
-
+      </section>
+      <section className="contact-section">
+        <h1>Contact us</h1>
+        <p>Tell us what you think and give suggestions!</p>
+        <form action=""></form>
       </section>
       <Footer />
     </div>

@@ -1,7 +1,19 @@
 .fighters-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-content: center;
   margin: 2rem 0;
+}
+
+@media (max-width: 1024px) {
+  .fighters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tekken-content{
+    justify-items: center;
+  }
 }

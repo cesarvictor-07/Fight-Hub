@@ -14,17 +14,19 @@ function Mk1() {
   return (
     <>
       <Header />
-      <h1 className="title-text">Mortal Kombat 1</h1>
-      <section className="fighter-grid">
-        {mk1Fighters.map(fighter => (
-          <FighterCard
-            key={fighter.id}
-            fighter={fighter}
-            backgroundClass="mk-background"
-          />
-        ))}
+      <section className="mk-content">
+        <h1 className="title-text">Mortal Kombat 1</h1>
+        <section className="fighters-grid">
+          {mk1Fighters.map(fighter => (
+            <FighterCard
+              key={fighter.id}
+              fighter={fighter}
+              backgroundClass="mk-background"
+            />
+          ))}
+        </section>
+        <button className="button home" onClick={handleClick}>Go back to home page</button>
       </section>
-      <button className="button home" onClick={handleClick}>Go back to home page</button>
       <Footer />
     </>
   );
