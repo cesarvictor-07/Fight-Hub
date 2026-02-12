@@ -26,7 +26,7 @@ function Ssbu() {
             />
           ))}
         </section>
-        <button className="button home" onClick={handleClick}>Go back to home page</button>
+        <button className="home-button" onClick={handleClick}>Go Home</button>
       </section>
       <Footer />
     </>

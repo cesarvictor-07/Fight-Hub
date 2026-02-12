@@ -16,6 +16,7 @@ function Mk1() {
       <Header />
       <section className="mk-content">
         <h1 className="title-text">Mortal Kombat 1</h1>
+        <h2>Some characters in the game:</h2>
         <section className="fighters-grid">
           {mk1Fighters.map(fighter => (
             <FighterCard
@@ -25,7 +26,7 @@ function Mk1() {
             />
           ))}
         </section>
-        <button className="button home" onClick={handleClick}>Go back to home page</button>
+        <button className="home-button" onClick={handleClick}>Go Home</button>
       </section>
       <Footer />
     </>

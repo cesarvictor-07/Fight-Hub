@@ -52,5 +52,5 @@ export const sf6Fighters = [
     name: "M.Bison",
     image: "",
     description: "With his psycho power truly deserved the title of dictator"
-  },
+  }
 ];

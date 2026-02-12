@@ -1,6 +1,6 @@
-# React + Vite
+# Fight Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fight Hub is a web about fighting games, where we show information about the game itself, its mechanics, characters and more.
 
 Currently, two official plugins are available:
 

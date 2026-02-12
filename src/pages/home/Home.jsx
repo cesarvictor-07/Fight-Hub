@@ -2,6 +2,7 @@ import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
 import "./Home.css";
+import Map from "../../components/Map";
 
 function Home() {
   const navigate = useNavigate();
@@ -33,8 +34,9 @@ function Home() {
       <section id="about" className="about-section">
         <h1>About us</h1>
         <p>Here in fight hub you can checkout a bunch of your favourite fighting games, see the game mechanichs, characters and more!</p>
+        <Map />
       </section>
-      <section className="contact-section">
+      <section id="contact" className="contact-section">
         <h1>Contact us</h1>
         <p>Tell us what you think and give suggestions!</p>
         <form action=""></form>

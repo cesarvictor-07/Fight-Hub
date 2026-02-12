@@ -12,11 +12,16 @@
 }
 
 .logo{
-  padding-left: 20px;
+  height: 60px;
+  border-radius: 2rem;
 }
 
 .links{
   display: flex;
   flex-direction: row;
   margin-right: 0.75rem;
+}
+
+.links:hover{
+  color: red;
 }

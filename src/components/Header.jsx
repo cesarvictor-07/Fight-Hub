@@ -10,7 +10,7 @@ function Header() {
   }
   return(
     <header className="header">
-      <img src="" alt="Logo" className="logo"/>
+      <img src="src\components\img\Fight-Hub.png" alt="Logo" className="logo" onClick={GoHome}/>
       <div className="header links">
         <p onClick={GoHome} className="links text">Home</p>
         <p onClick={GoHome} to="/#about" className="links text">About</p>

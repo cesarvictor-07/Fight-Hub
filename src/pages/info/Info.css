@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .privacy-section {
+    justify-items: center;
+  }
+
+  .cookies-section {
+    justify-items: center;
+  }
+
+  .terms-section{
+    justify-items: center;
+  }
+}

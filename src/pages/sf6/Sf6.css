@@ -6,6 +6,32 @@
   margin: 2rem 0;
 }
 
+.home-button {
+    height: 8rem;
+  width: 17rem;
+  margin: 0.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  transition: 1s;
+  background-image: url(/src/components/img/Fight-Hub.png);
+  color: black;
+}
+
+.home-button:hover{
+  scale: calc(1.05);
+}
+
 @media (max-width: 1024px) {
   .fighters-grid {
     grid-template-columns: repeat(2, 1fr);

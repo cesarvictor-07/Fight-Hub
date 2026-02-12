@@ -58,10 +58,6 @@
   background-image: url(/src/components/img/mk1img.webp);
 }
 
-.home {
-  background-image: url(/src/components/img/Fight\ Hub.png);
-}
-
 @media (max-width: 1024px) {
   .button-container {
     grid-template-columns: repeat(2, 1fr);
@@ -69,9 +65,14 @@
 }
 
 @media (max-width: 768px) {
-  section{
+  .about-section {
     justify-items: center;
   }
+
+  .contact-section {
+    justify-items: center;
+  }
+
   .fighters-grid {
     grid-template-columns: 1fr;
   }

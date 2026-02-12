@@ -16,6 +16,7 @@ function Tekken8() {
       <Header />
       <section className="tekken-content">
         <h1 className="title-text">Tekken 8</h1>
+        <h2>Some characters in the game:</h2>
         <section className="fighters-grid">
           {tekken8Fighters.map(fighter => (
             <FighterCard
@@ -25,7 +26,7 @@ function Tekken8() {
             />
           ))}
         </section>
-        <button className="button home" onClick={handleClick}>Go back to home page</button>
+        <button className="home-button" onClick={handleClick}>Go Home</button>
       </section>
       <Footer />
     </>

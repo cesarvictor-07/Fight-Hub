@@ -17,6 +17,7 @@ function Sf6() {
       <section className="sf-content">
         <h1 className="title-text">Street Fighter 6</h1>
         <p>The sixth entry of the most popular fighting game franchise ever!</p>
+        <h2>Some characters in the game:</h2>
         <section className="fighters-grid">
           {sf6Fighters.map(fighter => (
             <FighterCard
@@ -26,7 +27,7 @@ function Sf6() {
             />
           ))}
         </section>
-        <button className="button home" onClick={handleClick}>Go back to home page</button>
+        <button className="home-button" onClick={handleClick}>Go Home</button>
       </section>
       <Footer />
     </>
