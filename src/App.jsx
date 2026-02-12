@@ -17,10 +17,10 @@ function App() {
         <Routes>
           <Route path="*" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/Ssbu" element={<Ssbu />} />
-          <Route path="/Tekken8" element={<Tekken8 />} />
-          <Route path="/Sf6" element={<Sf6 />} />
-          <Route path="/Mk1" element={<Mk1 />} />
+          <Route path="/super-smash-bros-ultimate" element={<Ssbu />} />
+          <Route path="/tekken-8" element={<Tekken8 />} />
+          <Route path="/street-fighter-6" element={<Sf6 />} />
+          <Route path="/mortal-kombat-1" element={<Mk1 />} />
           <Route path="/info" element={<Info />} />
         </Routes>
       </BrowserRouter>

@@ -1,6 +1,6 @@
-import Footer from "../../components/Footer";
+import Footer from "../../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import "./Tekken8.css";
 import { tekken8Fighters } from "../../data/tekken8";
 import FighterCard from "../../components/fighter-card/FighterCard";
@@ -12,9 +12,9 @@ function Tekken8() {
     navigate("/home");
   }
   return (
-    <>
+    <div className="page">
       <Header />
-      <section className="tekken-content">
+      <main className="tekken-content">
         <h1 className="title-text">Tekken 8</h1>
         <h2>Some characters in the game:</h2>
         <section className="fighters-grid">
@@ -27,9 +27,9 @@ function Tekken8() {
           ))}
         </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>
-      </section>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

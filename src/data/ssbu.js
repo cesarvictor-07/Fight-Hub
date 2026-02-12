@@ -24,12 +24,6 @@ export const ssbuFighters = [
     description: "The Kremmling Kommander"
   },
   {
-    id: 4,
-    name: "Akuma",
-    image: "",
-    description: "The self-proclaimed master of the Satsui no hado"
-  },
-  {
     id: 5,
     name: "Luke",
     image: "",

@@ -1,3 +1,9 @@
+.mk-content {
+  text-align: center;
+  justify-items: center;
+  flex: 1;
+}
+
 .fighters-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -28,7 +34,7 @@
   color: black;
 }
 
-.home-button:hover{
+.home-button:hover {
   scale: calc(1.05);
 }
 

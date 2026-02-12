@@ -1,13 +1,24 @@
+.info-content {
+  margin-left: 0.5rem;
+  flex: 1;
+}
+
 @media (max-width: 768px) {
-  .privacy-section {
+  .info-content{
+    text-align: center;
+  }
+  /* .privacy-section {
     justify-items: center;
+    text-align: center;
   }
 
   .cookies-section {
     justify-items: center;
+    text-align: center;
   }
 
-  .terms-section{
+  .terms-section {
     justify-items: center;
-  }
+    text-align: center;
+  } */
 }

@@ -1,3 +1,7 @@
+.home-content {
+  flex: 1;
+}
+
 .button-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -41,6 +45,27 @@
   scale: calc(0.75);
 }
 
+.about-section {
+  justify-items: center;
+}
+
+.about-section p {
+  margin-left: 2rem;
+}
+
+.cesvic {
+  color: black;
+  text-decoration: none;
+}
+
+.cesvic:hover {
+  color: crimson;
+}
+
+.contact-section {
+  justify-items: center;
+}
+
 /* Imagenes */
 .smash {
   background-image: url(/src/components/img/everyoneishere.webp);
@@ -65,15 +90,7 @@
 }
 
 @media (max-width: 768px) {
-  .about-section {
-    justify-items: center;
-  }
-
-  .contact-section {
-    justify-items: center;
-  }
-
-  .fighters-grid {
+  .button-container {
     grid-template-columns: 1fr;
   }
 }

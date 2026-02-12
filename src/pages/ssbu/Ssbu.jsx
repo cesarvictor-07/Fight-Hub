@@ -1,6 +1,6 @@
-import Footer from "../../components/Footer";
+import Footer from "../../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import "./Ssbu.css";
 import { ssbuFighters } from "../../data/ssbu";
 import FighterCard from "../../components/fighter-card/FighterCard";
@@ -12,9 +12,9 @@ function Ssbu() {
     navigate("/home");
   }
   return (
-    <>
+    <div className="page">
       <Header />
-      <section className="smash-content">
+      <main className="smash-content">
         <h1 className="title-text">Super Smash Bros. Utlimate</h1>
         <h2>Some characters inside the game:</h2>
         <section className="fighters-grid">
@@ -27,9 +27,9 @@ function Ssbu() {
           ))}
         </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>
-      </section>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

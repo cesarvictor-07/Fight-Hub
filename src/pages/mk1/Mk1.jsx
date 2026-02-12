@@ -1,6 +1,6 @@
-import Footer from "../../components/Footer";
+import Footer from "../../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import "./Mk1.css";
 import { mk1Fighters } from "../../data/mk1";
 import FighterCard from "../../components/fighter-card/FighterCard";
@@ -12,10 +12,11 @@ function Mk1() {
     navigate("/home");
   }
   return (
-    <>
+    <div className="page">
       <Header />
-      <section className="mk-content">
+      <main className="mk-content">
         <h1 className="title-text">Mortal Kombat 1</h1>
+        <p>A "remake" of the original mortal kombat including new mechanics and new guest characters.</p>
         <h2>Some characters in the game:</h2>
         <section className="fighters-grid">
           {mk1Fighters.map(fighter => (
@@ -26,10 +27,13 @@ function Mk1() {
             />
           ))}
         </section>
+        <h2>Game mechanics:</h2>
+        <section className="mk-mechanics-section">
+        </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>
-      </section>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

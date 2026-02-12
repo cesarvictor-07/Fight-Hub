@@ -1,6 +1,6 @@
-import Footer from "../../components/Footer";
+import Footer from "../../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import FighterCard from "../../components/fighter-card/FighterCard";
 import { sf6Fighters } from "../../data/sf6";
 import "./Sf6.css"
@@ -12,9 +12,9 @@ function Sf6() {
     navigate("/home");
   }
   return (
-    <>
+    <div className="page">
       <Header />
-      <section className="sf-content">
+      <main className="sf-content">
         <h1 className="title-text">Street Fighter 6</h1>
         <p>The sixth entry of the most popular fighting game franchise ever!</p>
         <h2>Some characters in the game:</h2>
@@ -28,9 +28,9 @@ function Sf6() {
           ))}
         </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>
-      </section>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
