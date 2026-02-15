@@ -1,0 +1,37 @@
+footer {
+  background-color: black;
+  text-align: center;
+}
+
+.upperdog-section {
+  margin-top: 1.25rem;
+  background-color: rgb(85, 85, 85);
+}
+
+.copy-text {
+  color: white;
+}
+
+.info-text {
+  color: white;
+  cursor: pointer;
+}
+
+.info-text:hover {
+  color: aqua;
+}
+
+.icon {
+  color: white;
+  margin: 0 5px;
+  font-size: 30px;
+  transition: 1s;
+}
+
+.github:hover {
+  color: yellow;
+}
+
+.youtube:hover {
+  color: red;
+}

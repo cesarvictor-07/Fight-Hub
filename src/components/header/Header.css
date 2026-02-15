@@ -1,0 +1,27 @@
+.header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.logo{
+  height: 60px;
+  border-radius: 2rem;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  margin-right: 0.75rem;
+}
+
+.links:hover{
+  color: red;
+}

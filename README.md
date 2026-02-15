@@ -1,16 +1,28 @@
-# React + Vite
+# Fight Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fight Hub is a web about fighting games, where we show information about the game itself, its mechanics, characters and more.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is part of a 2 year course of Multiplattform App Development, this project is mostly focused on learning how to use and create a web using React, a Javascript library.
 
-## React Compiler
+## Built With
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- React
+- Javascript
+- Html
+- Css
 
-## Expanding the ESLint configuration
+## Third Party Components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React Router
+- Leaflet
+
+Links (in order of display):
+
+- https://reactrouter.com
+- https://leafletjs.com
+
+## Future Improvments
+
+For the future Fight Hub is thought of to add even more games and more characters some may be requested via our form. Also adding authentication for people who want to create their profiles for different games and be updated about the web's information.

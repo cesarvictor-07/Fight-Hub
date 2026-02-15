@@ -1,0 +1,50 @@
+.fighter-card {
+  width: 260px;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.fighter-card:hover {
+  transform: scale(1.05);
+}
+
+.fighter-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.fighter-name {
+  margin-top: 0.5rem;
+}
+
+.fighter-description {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Street Fighter */
+.sf6-background {
+  background: linear-gradient(135deg, #1e90ff, #000);
+  color: white;
+}
+
+/* Tekken */
+.tekken-background {
+  background: linear-gradient(135deg, #8b0000, #000);
+  color: white;
+}
+
+/* Mortal Kombat */
+.mk-background {
+  background: linear-gradient(135deg, #222, #000);
+  color: #f5c542;
+}
+
+/* Smash */
+.smash-background {
+  background: linear-gradient(135deg, #ff0000, #000);
+  color: white;
+}

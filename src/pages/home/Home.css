@@ -1,0 +1,96 @@
+.home-content {
+  flex: 1;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.button {
+  height: 8rem;
+  width: 17rem;
+  margin: 0.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  transition: 1s;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  transform: scale(1.03);
+}
+
+.logo {
+  scale: calc(0.75);
+}
+
+.about-section {
+  justify-items: center;
+}
+
+.about-section p {
+  margin-left: 2rem;
+}
+
+.cesvic {
+  color: black;
+  text-decoration: none;
+}
+
+.cesvic:hover {
+  color: crimson;
+}
+
+.contact-section {
+  justify-items: center;
+}
+
+/* Imagenes */
+.smash {
+  background-image: url(/src/components/img/everyoneishere.webp);
+}
+
+.sf6 {
+  background-image: url(/src/components/img/street-fighter-6-2048x2048-9757.jpg);
+}
+
+.tekken {
+  background-image: url(/src/components/img/TEKKEN8img.jpg);
+}
+
+.mk1 {
+  background-image: url(/src/components/img/mk1img.webp);
+}
+
+@media (max-width: 1024px) {
+  .button-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    grid-template-columns: 1fr;
+  }
+}
