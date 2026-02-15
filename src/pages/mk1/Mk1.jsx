@@ -27,7 +27,7 @@ function Mk1() {
             />
           ))}
         </section>
-        <h2>Game mechanics:</h2>
+        {/* <h2>Game mechanics:</h2> */}
         <section className="mk-mechanics-section">
         </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>

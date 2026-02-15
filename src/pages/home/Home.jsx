@@ -34,8 +34,8 @@ function Home() {
         </div>
         <section id="about" className="about-section">
           <h1>About us</h1>
-          <p>Here in fight hub you can checkout a bunch of your favourite fighting games, see the game mechanichs, characters and more!</p>
-          <p>The project of Fight Hub was thought of as a class project by a fighting game enjoyer, Cesvic07 who's known for going to tournaments for different games:</p>
+          <p>Here in fight hub you can checkout a bunch of your favourite fighting games, see the game mechanics, characters and more!</p>
+          <p>The project of Fight Hub was thought of by a fighting game enjoyer known for going to tournaments for different games like:</p>
           <ul>
             <li>
               <a className="cesvic" href="https://www.supermajor.gg/ultimate/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">Smash Bros. Ultimate</a>

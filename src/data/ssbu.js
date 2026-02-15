@@ -2,55 +2,55 @@ export const ssbuFighters = [
   {
     id: 1,
     name: "Mario",
-    image: "",
-    description: "Mr. Videogame himself."
+    image: "src/components/img/smash-character-imgs/Mario_SSBUltimate.png",
+    description: "Mr. Videogame himself"
   },
   {
     id: 2,
     name: "Kirby",
-    image: "",
-    description: "The pink demon."
+    image: "src/components/img/smash-character-imgs/Kirby_SSBU.png",
+    description: "The pink demon"
   },
   {
     id: 3,
     name: "Terry",
-    image: "",
+    image: "src/components/img/smash-character-imgs/Terry_SSBU.png",
     description: "The hungry wolf from Southtown"
   },
   {
     id: 4,
     name: "King K. Rool",
-    image: "",
+    image: "src/components/img/smash-character-imgs/King_K_Rool_SSBU.png",
     description: "The Kremmling Kommander"
   },
   {
     id: 5,
-    name: "Luke",
-    image: "",
-    description: "The latest amercian big-shot with his fighting style"
+    name: "Captain Falcon",
+    image: "src/components/img/smash-character-imgs/CaptainFalcon_SSBU.png",
+    description: "The speed racing legend"
   },
   {
     id: 6,
-    name: "Alex",
-    image: "",
-    description: "The Big Apple Brawler ready to Power Bomb you"
+    name: "Sephiroth",
+    image: "src/components/img/smash-character-imgs/SSBU_Sephiroth.png",
+    description: "The One Winged Angel"
   },
   {
     id: 7,
-    name: "Terry",
-    image: "",
-    description: "The hungry Wolf from Southtown"
+    name: "Sonic",
+    image: "src/components/img/smash-character-imgs/Sonic_SSBU.png",
+    description: "The blue speed ball"
   },
   {
     id: 8,
-    name: "Sagat",
-    image: "",
-    description: "The muay-thai champion called the king"
+    name: "Sora",
+    image: "src/components/img/smash-character-imgs/Sora_SSBU.png",
+    description: "Wielder of the keyblade"
   },
   {
     id: 9,
-    name: "M.Bison",
-    image: "",
-    description: "With his psycho power truly deserved the title of dictator"
+    name: "Joker",
+    image: "src/components/img/smash-character-imgs/Joker_SSBU.png",
+    description: "Leader of the Phantom Thieves"
   }
 ];
