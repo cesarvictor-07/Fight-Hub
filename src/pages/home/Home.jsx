@@ -50,10 +50,10 @@ function Home() {
           <h3>Here you have a map to know where to locate our HQ:</h3>
           <Map />
         </section>
-        <section id="contact" className="contact-section">
-          <h1>Contact us</h1>
-          <p>Tell us what you think and give suggestions!</p>
-          <form action=""></form>
+        <section id="chat" className="chat-section">
+          <h1>Chat</h1>
+          <p>Chat with other users!</p>
+          
         </section>
       </main>
       <Footer />
