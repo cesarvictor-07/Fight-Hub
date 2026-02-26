@@ -13,8 +13,8 @@ function Header() {
 
     window.history.replaceState(null, null, " ");
   }
-  const GoContact = () => {
-    window.location.hash = "contact"
+  const GoChat = () => {
+    window.location.hash = "chat"
 
     window.history.replaceState(null, null, " ");
   }
@@ -24,8 +24,8 @@ function Header() {
       <div className="header links">
         <p onClick={GoHome} className="links text">Home</p>
         <p onClick={GoAbout} className="links text">About</p>
-        <p className="links text">Sign Up</p>
-        <p onClick={GoContact} className="links text">Contact Us</p>
+        <p className="links text">Log/Sign</p>
+        <p onClick={GoChat} className="links text">Chat</p>
       </div>
     </header>
   )

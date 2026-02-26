@@ -53,6 +53,10 @@
   margin-left: 2rem;
 }
 
+.chat-section{
+  justify-items: center;
+}
+
 .cesvic {
   color: black;
   text-decoration: none;

@@ -27,6 +27,13 @@ function Sf6() {
             />
           ))}
         </section>
+        <h2>Game mechanics:</h2>
+        <section className="sf6-mechanics-section">
+          <p>The Street Fighter series is very well known for their 2D action, using motion inputs for the characters special and super movesbut Street fighter 6's mechanics are very different from every other street fighter game cause of the main thing, the Drive Gauge.</p>
+          <h3>The Drive Gauge:</h3>
+          <img className="sf6-img" src="src/components/img/300px-SF6_Drive_Gauge.jpg" alt="Drive Gauge" />
+          <p>That right here is the drive gauge itself, as you can see there are 6 bars of drive, doing certain things in the game can consume the gauge in different amounts, once you use all your gauge your character will be in burnout state where you will be very vulnerable.</p>
+        </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>
       </main>
       <Footer />

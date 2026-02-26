@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/header/Header";
 import "./Home.css";
 import Map from "../../components/map/Map";
+import Chat from "../../components/chat/chat";
 
 function Home() {
   const navigate = useNavigate();
@@ -50,10 +51,10 @@ function Home() {
           <h3>Here you have a map to know where to locate our HQ:</h3>
           <Map />
         </section>
-        <section id="contact" className="contact-section">
-          <h1>Contact us</h1>
-          <p>Tell us what you think and give suggestions!</p>
-          <form action=""></form>
+        <section id="chat" className="chat-section">
+          <h1>Chat</h1>
+          <p>Chat with other users!</p>
+          <Chat />
         </section>
       </main>
       <Footer />

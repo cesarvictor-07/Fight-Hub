@@ -27,8 +27,9 @@ function Mk1() {
             />
           ))}
         </section>
-        {/* <h2>Game mechanics:</h2> */}
+        <h2>Game mechanics:</h2>
         <section className="mk-mechanics-section">
+          Mortal Kombat 1's mechanics mostly stay the same compared to other Mortal Kombat games with tag team, fatalities and other classics.
         </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>
       </main>
