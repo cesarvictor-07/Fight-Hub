@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/header/Header";
 import "./Home.css";
 import Map from "../../components/map/Map";
-import Chat from "../../components/chat/Chat";
+import Chat from "../../components/chat/chat";
 
 function Home() {
   const navigate = useNavigate();

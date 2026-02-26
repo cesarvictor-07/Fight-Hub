@@ -1,37 +1,45 @@
 import { useEffect, useState } from "react";
-import { sendMessage, subscribeToMessages } from "../services/firebase/fb-chat";
+import { db } from "../../services/fb/firebase";
+import {
+  collection,
+  addDoc,
+  query,
+  orderBy,
+  onSnapshot,
+  serverTimestamp
+} from "firebase/firestore";
 
-export function UseChat() {
+export const useChat = (selectedGame) => {
   const [messages, setMessages] = useState([]);
-  const [username, setUsername] = useState("");
-  const [text, setText] = useState("");
-
   useEffect(() => {
-    const unsubscribe = subscribeToMessages(setMessages);
-    return () => unsubscribe();
-  }, []);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!username || !text) return;
-
-    await sendMessage({
-      username,
-      message: text,
-      category: "general",
-      createdAt: Date.now()
+    if (!selectedGame) return;
+    const q = query(
+      collection(db, "chats", selectedGame, "messages"),
+      orderBy("timestamp", "asc")
+    );
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const msgs = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      }));
+      setMessages(msgs);
     });
 
-    setText("");
+    return () => unsubscribe();
+  }, [selectedGame]);
+
+  const sendMessage = async (username, message) => {
+    if (!username || !message) return;
+
+    await addDoc(
+      collection(db, "chats", selectedGame, "messages"),
+      {
+        Username: username,
+        Message: message,
+        timestamp: serverTimestamp()
+      }
+    );
   };
 
-  return {
-    messages,
-    username,
-    setUsername,
-    text,
-    setText,
-    handleSubmit
-  };
-}
+  return { messages, sendMessage };
+};

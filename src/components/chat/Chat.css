@@ -1,70 +1,66 @@
 .chat-container {
-  border-radius: 1rem;
-  background: linear-gradient(100deg, rgb(249, 52, 52), rgb(73, 26, 26));
-  width: 80%;
-  height: 400px;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.chat-section {
-  width: 95%;
-  height: 90%;
+  width: 60%;
+  margin: auto;
+  height: 80vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(100deg, rgb(230, 69, 69), rgb(136, 27, 27));
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  margin-bottom: 1.25rem;
 }
 
+.game-change {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  width: 25%;
+  height: 5%;
+  cursor: pointer;
+}
 
-.messages-section {
+.messages {
   flex: 1;
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  padding: 10px;
 }
 
 .message {
-  align-self: flex-end;
   background: white;
-  padding: 6px 12px;
-  border-radius: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
   max-width: 70%;
+  justify-self: flex-end;
 }
 
-.send-message {
-  margin-top: auto;
-  background: linear-gradient(200deg,rgb(120, 120, 255), rgb(45, 45, 164));
+.message span {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.input-area {
   display: flex;
-  justify-content: center;
-  gap: 5px;
-  margin-top: 0.25rem;
-  border-radius: 0.5rem;
-  padding: 0.75rem;
+  padding: 10px;
+  background: linear-gradient(100deg, rgb(113, 113, 245), rgb(44, 44, 143));
+  max-height: 20%;
 }
 
-.user-box {
-  padding: 6px;
-  border-radius: 6px;
-  border: none;
-}
-
-.text-box{
+.input-area input {
   flex: 1;
-  resize: none;          
-  border-radius: 8px;
-  border: none;
+  margin-right: 5px;
   padding: 8px;
-  max-height: 3rem;    
-  overflow-y: auto;
+  border-radius: 0.5rem;
 }
 
-.send-button {
-  padding: 6px;
-  border-radius: 6px;
-  border: none;
+.input-area textarea {
+  flex: 1;
+  margin-right: 5px;
+  padding: 8px;
+  border-radius: 0.5rem;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 1rem;
   cursor: pointer;
 }
