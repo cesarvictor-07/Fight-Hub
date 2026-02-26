@@ -12,6 +12,10 @@
   margin: 2rem 0;
 }
 
+.sf6-img{
+  border-radius: 0.5rem;
+}
+
 .home-button {
   height: 8rem;
   width: 17rem;

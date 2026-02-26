@@ -27,6 +27,12 @@ function Tekken8() {
             />
           ))}
         </section>
+        <h2>Game mechanics:</h2>
+        <section className="tekken-mechanics-section">
+          <p>The Tekken saga, known for 3D style combat came to Tekken 8 with the tought of making the game more fast-paced so they created the Heat System.</p>
+          <img className="tekken-heat-img" src="src/components/img/tekken8-heat-timer.png" alt="Heat Gauge" />
+          <p>That is the Heat Gauge when transformed into the Heat Timer, lasts around 10 seconds and during those you have access to a lot of different options to make Heat last longer or spend it all for instant reward</p>
+        </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>
       </main>
       <Footer />

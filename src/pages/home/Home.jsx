@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/header/Header";
 import "./Home.css";
 import Map from "../../components/map/Map";
+import Chat from "../../components/chat/Chat";
 
 function Home() {
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ function Home() {
         <section id="chat" className="chat-section">
           <h1>Chat</h1>
           <p>Chat with other users!</p>
-          
+          <Chat />
         </section>
       </main>
       <Footer />

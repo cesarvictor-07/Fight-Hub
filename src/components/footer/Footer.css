@@ -6,6 +6,11 @@ footer {
 .upperdog-section {
   margin-top: 1.25rem;
   background-color: rgb(85, 85, 85);
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .copy-text {
@@ -24,7 +29,7 @@ footer {
 .icon {
   color: white;
   margin: 0 5px;
-  font-size: 30px;
+  font-size: 35px;
   transition: 1s;
 }
 
