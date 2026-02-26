@@ -29,7 +29,7 @@ For the future Fight Hub is thought of to add even more games and more character
 
 ## Tutorials
 
-In this section there will be links of some tutorials used in this project:
+In this section there will be links of some tutorials used in the project:
 
 README: https://github.com/othneildrew/Best-README-Template
 
