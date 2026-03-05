@@ -18,7 +18,7 @@ function Mk1() {
         <h1 className="title-text">Mortal Kombat 1</h1>
         <p>A "remake" of the original mortal kombat including new mechanics and new guest characters.</p>
         <h2>Some characters in the game:</h2>
-        <section className="fighters-grid">
+        <section className="mk-fighters-grid">
           {mk1Fighters.map(fighter => (
             <FighterCard
               key={fighter.id}

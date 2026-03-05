@@ -18,7 +18,7 @@ function Sf6() {
         <h1 className="title-text">Street Fighter 6</h1>
         <p>The sixth entry of the most popular fighting game franchise ever!</p>
         <h2>Some characters in the game:</h2>
-        <section className="fighters-grid">
+        <section className="sf6-fighters-grid">
           {sf6Fighters.map(fighter => (
             <FighterCard
               key={fighter.id}

@@ -6,6 +6,10 @@ Fight Hub is a web about fighting games, where we show information about the gam
 
 This project is part of a 2 year course of Multiplattform App Development, this project is mostly focused on learning how to use and create a web using React, a Javascript library.
 
+## Features
+
+
+
 ## Built With
 
 - React
@@ -17,15 +21,17 @@ This project is part of a 2 year course of Multiplattform App Development, this 
 
 - React Router
 - Leaflet
+- Firebase
 
 Links (in order of display):
 
 - https://reactrouter.com
 - https://leafletjs.com
+- https://firebase.google.com
 
 ## Future Improvments
 
-For the future Fight Hub is thought of to add even more games and more characters some may be requested via our form. Also adding authentication for people who want to create their profiles for different games and be updated about the web's information.
+For the future Fight Hub is thought of to add even more games and more characters some may be requested via our form or chat. Also adding authentication for people who want to create their profiles for different games and be updated about the web's information.
 
 ## Tutorials
 

@@ -18,7 +18,7 @@ function Ssbu() {
         <h1 className="title-text">Super Smash Bros. Utlimate</h1>
         <p>The latest game of the franchise with the biggest roster of characters from different third-party franchises</p>
         <h2>Some characters inside the game:</h2>
-        <section className="fighters-grid">
+        <section className="ssbu-fighters-grid">
           {ssbuFighters.map(fighter => (
             <FighterCard
               key={fighter.id}

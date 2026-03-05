@@ -18,7 +18,7 @@ function Tekken8() {
         <h1 className="title-text">Tekken 8</h1>
         <p>The latest game that follows the Tekken franchise with The King of Iron Fist Tournament held by Kazuya Mishima</p>
         <h2>Some characters in the game:</h2>
-        <section className="fighters-grid">
+        <section className="tekken-fighters-grid">
           {tekken8Fighters.map(fighter => (
             <FighterCard
               key={fighter.id}

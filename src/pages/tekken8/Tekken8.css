@@ -4,18 +4,23 @@
   flex: 1;
 }
 
-.fighters-grid {
+.tekken-fighters-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   margin: 2rem 0;
 }
 
-.tekken-heat-img{
+.tekken-heat-img {
   border-radius: 1rem;
   max-height: 20rem;
   width: 50%;
+}
+
+.tekken-mechanics-section p {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .home-button {
@@ -45,8 +50,13 @@
 }
 
 @media (max-width: 1024px) {
-  .fighters-grid {
+  .tekken-fighters-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tekken-fighters-grid>*:last-child:nth-child(odd) {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }
 
