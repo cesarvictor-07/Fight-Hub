@@ -40,3 +40,8 @@ footer {
 .youtube:hover {
   color: red;
 }
+
+.web-link-section{
+  display: flex;
+  justify-self: center;
+}

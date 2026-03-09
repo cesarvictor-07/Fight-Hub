@@ -25,3 +25,13 @@
 .links:hover{
   color: red;
 }
+
+.mini-menu-button{
+  background-color: black;
+  color: white;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  
+}

@@ -6,6 +6,7 @@ import Tekken8 from './pages/tekken8/Tekken8';
 import Mk1 from './pages/mk1/Mk1';
 import Info from './pages/info/info';
 import UserAuth from './pages/user-auth/UserAuth';
+import Rss from './pages/rss/Rss';
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
@@ -24,6 +25,7 @@ function App() {
           <Route path="/mortal-kombat-1" element={<Mk1 />} />
           <Route path="/info" element={<Info />} />
           <Route path="/user" element={<UserAuth />} />
+          <Route path="/news" element={<Rss />} />
         </Routes>
       </BrowserRouter>
     </>

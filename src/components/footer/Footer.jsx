@@ -8,6 +8,25 @@ function Footer() {
   const ShowInfo = () => {
     navigate("/info");
   }
+  const GoHome = () => {
+    navigate("/home");
+  }
+
+  const GoUsers = () => {
+    navigate("/user");
+  }
+  const GoRss = () => {
+    navigate("/news");
+
+    window.history.replaceState(null, null, " ");
+  }
+  const GoAbout = () => {
+    GoHome
+
+    window.location.hash = "about"
+
+    window.history.replaceState(null, null, " ");
+  }
   return (
     <footer>
       <section className="upperdog-section">
@@ -17,12 +36,15 @@ function Footer() {
         <a className="icon youtube" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
           <FaYoutube />
         </a>
-        <div class="footer form-div">
-          <form action=""></form>
-        </div>
       </section>
-      <p class="copy-text">&copy; 2026 FIGHTHUB. All rights reserved.</p>
-      <p class="info-text" onClick={ShowInfo} to="">Privacy Policy | Cookies | Terms & Conditions</p>
+      <p className="copy-text">&copy; 2026 FIGHTHUB. All rights reserved.</p>
+      <div className="web-link-section">
+        <p onClick={GoHome} className="links text">Home</p>
+        <p onClick={GoRss} className="links text">News</p>
+        <p onClick={GoUsers} className="links text">Log in/Sign up</p>
+        <p onClick={GoAbout} className="links text">About</p>
+      </div>
+      <p className="info-text" onClick={ShowInfo} to="">Privacy Policy | Cookies | Terms & Conditions</p>
     </footer>
   )
 }
