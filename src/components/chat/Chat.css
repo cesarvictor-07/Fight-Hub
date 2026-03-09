@@ -57,6 +57,7 @@
   margin-right: 5px;
   padding: 8px;
   border-radius: 0.5rem;
+  resize: none;
 }
 
 button {

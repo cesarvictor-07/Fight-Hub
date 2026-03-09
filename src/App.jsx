@@ -5,6 +5,7 @@ import Sf6 from './pages/sf6/Sf6';
 import Tekken8 from './pages/tekken8/Tekken8';
 import Mk1 from './pages/mk1/Mk1';
 import Info from './pages/info/info';
+import UserAuth from './pages/user-auth/UserAuth';
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
@@ -22,6 +23,7 @@ function App() {
           <Route path="/street-fighter-6" element={<Sf6 />} />
           <Route path="/mortal-kombat-1" element={<Mk1 />} />
           <Route path="/info" element={<Info />} />
+          <Route path="/user" element={<UserAuth />} />
         </Routes>
       </BrowserRouter>
     </>

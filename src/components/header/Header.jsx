@@ -8,6 +8,10 @@ function Header() {
   const GoHome = () => {
     navigate("/home");
   }
+
+  const GoUsers = () => {
+    navigate("/user");
+  }
   const GoAbout = () => {
     window.location.hash = "about"
 
@@ -24,7 +28,7 @@ function Header() {
       <div className="header links">
         <p onClick={GoHome} className="links text">Home</p>
         <p onClick={GoAbout} className="links text">About</p>
-        <p className="links text">Log/Sign</p>
+        <p onClick={GoUsers} className="links text">Log in/Sign up</p>
         <p onClick={GoChat} className="links text">Chat</p>
       </div>
     </header>
