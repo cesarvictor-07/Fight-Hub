@@ -36,18 +36,11 @@ function Home() {
         <section id="about" className="about-section">
           <h1>About us</h1>
           <p>Here in fight hub you can checkout a bunch of your favourite fighting games, see the game mechanics, characters and more!</p>
-          <p>The project of Fight Hub was thought of by a fighting game enjoyer known for going to tournaments for different games like:</p>
-          <ul>
-            <li>
-              <a className="cesvic" href="https://www.supermajor.gg/ultimate/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">Smash Bros. Ultimate</a>
-            </li>
-            <li>
-              <a className="cesvic" href="https://www.supermajor.gg/sf6/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">Street Fighter 6</a>
-            </li>
-            <li>
-              <a className="cesvic" href="https://www.supermajor.gg/tekken8/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">Tekken 8</a>
-            </li>
-          </ul>
+          <p>The project of Fight Hub was thought of by a fighting game enjoyer known for going to tournaments for different games such the ones shown in the web:
+            <a className="cesvic" href="https://www.supermajor.gg/ultimate/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer"> Smash Bros. Ultimate</a>
+            <a className="cesvic" href="https://www.supermajor.gg/sf6/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">, Street Fighter 6</a>
+            <a className="cesvic" href="https://www.supermajor.gg/tekken8/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">, Tekken 8</a>
+          </p>
           <h3>Here you have a map to know where to locate our HQ:</h3>
           <Map />
         </section>
