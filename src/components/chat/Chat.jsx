@@ -1,19 +1,27 @@
 import { useState } from "react";
 import { useChat } from "./use-chat";
+import { useNavigate } from "react-router-dom";
 import "./Chat.css";
+import { auth } from "../../services/fb/firebase";
 
 const games = ["all", "Ssbu", "Street Fighter 6", "Tekken 8", "Mortal Kombat"];
 
 const Chat = () => {
-  const [username, setUsername] = useState("");
+  const navigate = useNavigate();
   const [message, setMessage] = useState("");
   const [selectedGame, setSelectedGame] = useState("all");
 
-  const { messages, sendMessage } = useChat(selectedGame);
+  const user = auth.currentUser;
+  const { messages, sendMessage, deleteMessage, editMessage } = useChat(selectedGame);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sendMessage(username, message);
+
+    if (!user) {
+      navigate("/user");
+      return;
+    }
+    sendMessage(message);
     setMessage("");
   };
 
@@ -35,17 +43,23 @@ const Chat = () => {
             <span>
               {msg.timestamp?.toDate().toLocaleTimeString()}
             </span>
+
+            {user && user.uid === msg.userId && (
+              <div>
+                <button onClick={() => {
+                  const newText = prompt("Edit message:", msg.Message);
+                  if (newText) {
+                    editMessage(msg.id, newText);
+                  }
+                }}>Edit</button>
+                <button onClick={() => deleteMessage(msg.id)}>Delete</button>
+              </div>
+            )}
           </div>
         ))}
       </div>
 
       <form onSubmit={handleSubmit} className="input-area">
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
         <textarea
           placeholder="Write your message here..."
           value={message}

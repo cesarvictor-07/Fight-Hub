@@ -21,7 +21,7 @@ function Footer() {
     window.history.replaceState(null, null, " ");
   }
   const GoAbout = () => {
-    GoHome
+    GoHome();
 
     window.location.hash = "about"
 
