@@ -4,12 +4,21 @@ import { useState } from "react";
 import logo from "../../components/img/Fight-Hub.png"
 import { useNavigate } from "react-router-dom";
 import { auth } from "../../services/fb/firebase";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { db } from "../../services/fb/firebase";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile
+} from "firebase/auth";
 
 function UserAuth() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [usernameError, setUsernameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
 
   const handleCreate = async (e) => {
     e.preventDefault();
@@ -36,7 +45,36 @@ function UserAuth() {
       GoHome();
     } catch (err) {
       console.error(err);
-      alert(err.message);
+
+      setUsernameError("");
+      setEmailError("");
+      setPasswordError("");
+
+      switch (err.code) {
+        case "auth/email-already-exists":
+          setEmailError("This email is already registered");
+          break;
+
+        case "auth/invalid-email":
+          setEmailError("Invalid email type");
+          break;
+
+        case "auth/user-not-found":
+          setPasswordError("No account is linked to this email");
+          break;
+
+        case "auth/wrong-password":
+          setPasswordError("Incorrect password");
+          break;
+
+        case "auth/weak-password":
+          setPasswordError("Password must be at least 6 characters");
+          break;
+
+        default:
+          setPasswordError("Something went wrong, try again");
+
+      }
     }
   }
 
@@ -68,17 +106,20 @@ function UserAuth() {
               <section className="username-section">
                 <h3>Username:</h3>
                 <input type="text" placeholder="Your Username..." value={username} onChange={(e) => setUsername(e.target.value)} />
+                {usernameError && <p className="error-text">{emailError}</p>}
               </section>
             )}
             <section className="email-section">
               <h3>Email:</h3 >
-              <input type="email" placeholder="Your email..." value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input type="email" placeholder="Your email..." value={email} onChange={(e) => { setEmail(e.target.value); setEmailError("") }} />
             </section>
+            {emailError && <p className="error-text">{emailError}</p>}
             <section className="pass-section">
               <h3>Password:</h3>
-              <input type="password" placeholder="Your Password..." value={password} onChange={(e) => setPassword(e.target.value)} />
+              <input type="password" placeholder="Your Password..." value={password} onChange={(e) => { setPassword(e.target.value); setPasswordError("") }} />
             </section>
-            <button type="submit">{userOption === "0" ? "Create Account" : "Log In"}</button>
+            {passwordError && <p className="error-text">{passwordError}</p>}
+            <button className="user-form-button" type="submit">{userOption === "0" ? "Create Account" : "Log In"}</button>
           </form>
         </div>
         {userOption === "1" && (
@@ -93,7 +134,7 @@ function UserAuth() {
               <a className="option-link" onClick={wantLogIn}> Log in now!</a></p>
           </section>
         )}
-          <h3>Reminder: You need an account or be logged in to use the chat</h3>
+        <h3>Reminder: You need an account and be logged in to use the chat</h3>
       </main>
       <Footer />
     </div>

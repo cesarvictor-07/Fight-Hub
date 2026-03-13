@@ -22,6 +22,8 @@
   flex: 1;
   overflow-y: auto;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .message {
@@ -29,8 +31,51 @@
   padding: 8px 12px;
   border-radius: 10px;
   margin-bottom: 8px;
-  max-width: 70%;
-  justify-self: flex-end;
+  max-width: 65%;
+  width: fit-content;
+  position: relative;
+}
+
+.message-actions {
+  bottom: 5px;
+  left: 5px;
+
+  display: flex;
+  gap: 5px;
+  margin-top: 0;
+  max-height: 0;
+
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.message:hover .message-actions {
+  margin-top: 6px;
+  max-height: 30px;
+  opacity: 1;
+}
+
+.message-actions button {
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: none;
+  background: #eee;
+}
+
+.message-user-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+}
+
+.message.own {
+  margin-left: auto;
+}
+
+.message-actions button:hover {
+  background: #ddd;
 }
 
 .message span {
@@ -60,8 +105,13 @@
   resize: none;
 }
 
-button {
+.send-button {
   padding: 8px 12px;
   border-radius: 1rem;
   cursor: pointer;
+  transition: 0.7s;
+}
+
+.send-button:hover {
+  transform: scale(1.02);
 }

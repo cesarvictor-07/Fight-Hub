@@ -32,6 +32,10 @@
   color: white;
   display: none;
   margin-right: 1rem;
+  border-radius: 0.5rem;
+  max-height: 3rem;
+  max-width: 3rem;
+  font-size: 1.5rem;
 }
 
 .mini-menu {
@@ -39,7 +43,7 @@
 }
 
 @media (max-width: 768px) {
-  .mini-menu-button{
+  .mini-menu-button {
     display: block;
   }
 
