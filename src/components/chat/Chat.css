@@ -13,7 +13,7 @@
 .game-change {
   margin: 1rem;
   border-radius: 0.5rem;
-  width: 25%;
+  width: 30%;
   height: 5%;
   cursor: pointer;
 }
@@ -34,6 +34,13 @@
   max-width: 65%;
   width: fit-content;
   position: relative;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.message p {
+  margin: 0;
+  white-space: pre-wrap;
 }
 
 .message-actions {
@@ -58,14 +65,14 @@
 
 .message-actions button {
   padding: 4px 6px;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border: none;
-  background: #eee;
 }
 
 .message-user-time {
   display: flex;
   justify-content: space-between;
+  gap: 0.5rem;
   font-size: 0.75rem;
   margin-bottom: 4px;
 }
@@ -75,7 +82,17 @@
 }
 
 .message-actions button:hover {
-  background: #ddd;
+  background: #dedede;
+}
+
+.edit-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+
+.edit-options button {
+  border-radius: 0.5rem;
 }
 
 .message span {

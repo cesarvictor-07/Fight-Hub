@@ -55,7 +55,7 @@ export const useChat = (selectedGame) => {
     const ref = doc(db, "chats", selectedGame, "messages", id);
 
     await updateDoc(ref, {
-      message: newMessage
+      Message: newMessage
     });
   };
   return { messages, sendMessage, deleteMessage, editMessage };

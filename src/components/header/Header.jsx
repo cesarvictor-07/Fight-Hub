@@ -53,7 +53,7 @@ function Header() {
           <p onClick={() => { GoAbout(); closeMiniMenu(); }} className="links text">About</p>
           <p onClick={() => { GoUsers(); closeMiniMenu(); }} className="links text">Log in/Sign up</p>
           <p onClick={() => { GoChat(); closeMiniMenu(); }} className="links text">Chat</p>
-          <p onClick={() => { GoRss(); closeMiniMenu(); }} className="links text">News</p>
+          <p onClick={() => { GoRss(); closeMiniMenu(); }} className="links text">RSS</p>
         </div>
       </div>
     </header>

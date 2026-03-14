@@ -17,13 +17,18 @@ function Footer() {
   }
   const GoRss = () => {
     navigate("/news");
-
-    window.history.replaceState(null, null, " ");
   }
   const GoAbout = () => {
     GoHome();
 
     window.location.hash = "about"
+
+    window.history.replaceState(null, null, " ");
+  }
+  const GoChat = () => {
+    GoHome();
+
+    window.location.hash = "chat"
 
     window.history.replaceState(null, null, " ");
   }
@@ -40,9 +45,10 @@ function Footer() {
       <p className="copy-text">&copy; 2026 FIGHTHUB. All rights reserved.</p>
       <div className="web-link-section">
         <p onClick={GoHome} className="links text">Home</p>
-        <p onClick={GoRss} className="links text">News</p>
+        <p onClick={GoRss} className="links text">RSS</p>
         <p onClick={GoUsers} className="links text">Log in/Sign up</p>
         <p onClick={GoAbout} className="links text">About</p>
+        <p onClick={GoChat} className="links text">Chat</p>
       </div>
       <p className="info-text" onClick={ShowInfo} to="">Privacy Policy | Cookies | Terms & Conditions</p>
     </footer>

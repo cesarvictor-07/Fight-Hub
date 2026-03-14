@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Noticias Fight Hub</title>
+    <link>https://fight-hub-12490.web.app</link>
+    <description>Latest news on the web</description>
+    <language>en-en</language>
+    <lastBuildDate>14th March 2026</lastBuildDate>
+
+    <item>
+      <title>Alex added to Street Fighter 6</title>
+      <link>https://fight-hub-12490.web.app</link>
+      <description>The newest character in Street Fighter, Alex has been added</description>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>New Smash Bros. Ultimate Content</title>
+      <link>https://fight-hub-12490.web.app</link>
+      <description></description>
+      <pubDate>Sat, 14 Mar 2026 18:30:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

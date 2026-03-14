@@ -6,8 +6,6 @@ import { auth } from "../../services/fb/firebase";
 import { FaPencil } from "react-icons/fa6";
 import { FaTrash } from "react-icons/fa";
 
-const games = ["all", "Ssbu", "Street Fighter 6", "Tekken 8", "Mortal Kombat"];
-
 const Chat = () => {
   const navigate = useNavigate();
   const [message, setMessage] = useState("");
@@ -28,7 +26,7 @@ const Chat = () => {
       navigate("/user");
       return;
     }
-    if(!message.trim()) return;
+    if (!message.trim()) return;
     sendMessage(message);
     setMessage("");
   };
@@ -84,7 +82,7 @@ const Chat = () => {
                     onChange={(e) => setEditText(e.target.value)}
                     rows={2}
                   />
-                  <div className="edit-buttons">
+                  <div className="edit-options">
                     <button onClick={() => saveEdit(msg.id)}>Save</button>
                     <button onClick={() => setEditingId(null)}>Cancel</button>
                   </div>
@@ -104,7 +102,7 @@ const Chat = () => {
                     className={deleteConfirm === msg.id ? "confirm-delete" : ""}
                     onClick={() => handleDelete(msg.id)}
                   >
-                    {deleteConfirm === msg.id ? "Delete Forever?" : <FaTrash />}
+                    {deleteConfirm === msg.id ? "For real?" : <FaTrash />}
                   </button>
 
                 </div>
@@ -121,6 +119,12 @@ const Chat = () => {
           value={message}
           rows={2}
           onChange={(e) => setMessage(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault();
+              handleSubmit(e);
+            }
+          }}
         />
         <button className="send-button" type="submit">Send</button>
       </form>
