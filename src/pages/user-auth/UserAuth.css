@@ -10,17 +10,21 @@
   height: 25px;
 }
 
-img {
+.logo-img {
   max-height: 5rem;
   max-width: 5rem;
   border-radius: 1rem;
   margin-top: 20px;
 }
 
+.logo-img:hover {
+  cursor: pointer;
+}
+
 .form-container {
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(226, 65, 65);
   border-radius: 0.5rem;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 }
 
@@ -59,4 +63,24 @@ img {
   color: red;
   font-weight: bold;
   margin-top: 0.5rem;
+}
+
+.user-state {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.logout-button {
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  height: 3rem;
+  max-width: fit-content;
+}
+
+.logout-button:hover {
+  cursor: pointer;
+  scale: calc(1.05);
+  font-weight: bold;
 }

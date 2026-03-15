@@ -8,15 +8,25 @@ import Info from './pages/info/info';
 import UserAuth from './pages/user-auth/UserAuth';
 import Rss from './pages/rss/Rss';
 import News from './pages/news/News';
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './App.css'
 
 
 function App() {
+  function TopScroll() {
+    const pathname = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  }
   return (
     <>
       <BrowserRouter>
+        <TopScroll />
         <Routes>
           <Route path="*" element={<Home />} />
           <Route path="/home" element={<Home />} />

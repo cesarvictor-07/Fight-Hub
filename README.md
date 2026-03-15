@@ -1,7 +1,7 @@
 # Fight Hub
 
 Fight Hub is a web about fighting games, where we show information about the game itself, its mechanics, characters and more.
-Here's a link of our page hosted via Firebase Hosting:
+Here's a link of our page hosted via Firebase Hosting: 
 https://fight-hub-12490.web.app
 
 ## About the Project
@@ -23,7 +23,7 @@ The main features of Fight Hub are the implemented Chat feature, where you can c
 
 - React Router
 - Leaflet
-- Firebase
+- Firebase (Firestore & Hosting)
 
 Links (in order of display):
 
@@ -33,7 +33,7 @@ Links (in order of display):
 
 ## Future Improvments
 
-For the future Fight Hub is thought of to add even more games and more characters some may be requested via our form or chat. Also adding authentication for people who want to create their profiles for different games and be updated about the web's information.
+For the future Fight Hub is thought of to add even more games and more characters some may be requested via our chat. Also adding other features thought of by the community, feel free to give your ideas for optimization or new features!
 
 ## Tutorials
 
@@ -41,3 +41,6 @@ In this section there will be links of some tutorials used in the project:
 
 README: https://github.com/othneildrew/Best-README-Template
 
+## Rss feed img
+![alt text](src/components/img/image.png)
+![alt text](src/components/img/image-2.png)

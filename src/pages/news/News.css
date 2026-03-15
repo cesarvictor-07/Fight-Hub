@@ -5,6 +5,17 @@
   align-items: center;
 }
 
+.logo-img {
+  max-height: 5rem;
+  max-width: 5rem;
+  border-radius: 1rem;
+  margin-top: 20px;
+}
+
+.logo-img:hover {
+  cursor: pointer;
+}
+
 .news-container {
   width: 80%;
   padding: 1rem;

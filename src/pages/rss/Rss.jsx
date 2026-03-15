@@ -9,7 +9,7 @@ function Rss() {
       <main className="rss-section">
         <h1 className="title-text">RSS: Explore the most recent news about Fight Hub and the fighting game world!</h1>
         <div className="rss-container">
-          <h2>Check some news through our feeds:</h2>
+          <h2>Check some news through feeds:</h2>
           <div className="feed-container">
             <section className="feed-card">
               <h4>Fight Hub news:</h4>

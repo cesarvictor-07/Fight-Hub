@@ -1,14 +1,17 @@
-html, body, #root{
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
 }
 
-.page{
+.page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(50deg, rgb(208, 208, 208), rgb(243, 230, 230));
 }
 
-.content{
+.content {
   flex: 1;
 }
