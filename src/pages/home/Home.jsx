@@ -4,22 +4,43 @@ import Header from "../../components/header/Header";
 import "./Home.css";
 import Map from "../../components/map/Map";
 import Chat from "../../components/chat/chat";
+import { useEffect, useState } from "react";
+import { auth } from "../../services/fb/firebase";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 
 function Home() {
+  const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
-  const SsbuGo = () => {
+  const ssbuGo = () => {
     navigate("/super-smash-bros-ultimate");
   }
-  const Sf6Go = () => {
+  const sf6Go = () => {
     navigate("/street-fighter-6");
   }
-  const T8Go = () => {
+  const t8Go = () => {
     navigate("/tekken-8");
   }
-  const Mk1Go = () => {
+  const mk1Go = () => {
     navigate("/mortal-kombat-1");
   }
+
+  const authGo = () => {
+    navigate("/user");
+  }
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const letLogout = async () => {
+    await signOut(auth);
+  }
+
   return (
     <div className="page">
       <Header />
@@ -28,26 +49,19 @@ function Home() {
           <h1 className="main-text">Welcome to Fight Hub!</h1>
         </div>
         <div className="button-container">
-          <button className="button smash" onClick={SsbuGo}>Go to Smash Bros Ultimate page</button>
-          <button className="button sf6" onClick={Sf6Go}>Go to Street Fighter 6 page</button>
-          <button className="button tekken" onClick={T8Go}>Go to Tekken 8 page</button>
-          <button className="button mk1" onClick={Mk1Go}>Go to Mortal Kombat 1 page</button>
+          <button className="button smash" onClick={ssbuGo}>Go to Smash Bros Ultimate page</button>
+          <button className="button sf6" onClick={sf6Go}>Go to Street Fighter 6 page</button>
+          <button className="button tekken" onClick={t8Go}>Go to Tekken 8 page</button>
+          <button className="button mk1" onClick={mk1Go}>Go to Mortal Kombat 1 page</button>
         </div>
         <section id="about" className="about-section">
           <h1>About us</h1>
           <p>Here in fight hub you can checkout a bunch of your favourite fighting games, see the game mechanics, characters and more!</p>
-          <p>The project of Fight Hub was thought of by a fighting game enjoyer known for going to tournaments for different games like:</p>
-          <ul>
-            <li>
-              <a className="cesvic" href="https://www.supermajor.gg/ultimate/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">Smash Bros. Ultimate</a>
-            </li>
-            <li>
-              <a className="cesvic" href="https://www.supermajor.gg/sf6/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">Street Fighter 6</a>
-            </li>
-            <li>
-              <a className="cesvic" href="https://www.supermajor.gg/tekken8/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">Tekken 8</a>
-            </li>
-          </ul>
+          <p>The project of Fight Hub was thought of by a fighting game enjoyer known for going to tournaments for different games such the ones shown in the web:
+            <a className="cesvic" href="https://www.supermajor.gg/ultimate/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer"> Smash Bros. Ultimate</a>
+            <a className="cesvic" href="https://www.supermajor.gg/sf6/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">, Street Fighter 6</a>
+            <a className="cesvic" href="https://www.supermajor.gg/tekken8/player/Cesvic07?id=S2506028" target="_blank" rel="noopener noreferrer">, Tekken 8</a>
+          </p>
           <h3>Here you have a map to know where to locate our HQ:</h3>
           <Map />
         </section>
@@ -55,6 +69,16 @@ function Home() {
           <h1>Chat</h1>
           <p>Chat with other users!</p>
           <Chat />
+          {user ? (
+            <div className="user-state">
+              <h4>You are logged in as {user.displayName}</h4>
+              <button className="logout-button" onClick={letLogout}>Log out</button>
+            </div>
+          ) : (
+            <p>You are not logged in, wanna log in?
+              <a className="link-text" onClick={authGo}> click here!</a>
+            </p>
+          )}
         </section>
       </main>
       <Footer />

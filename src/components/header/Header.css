@@ -11,17 +11,66 @@
   cursor: pointer;
 }
 
-.logo{
+.logo {
   height: 60px;
   border-radius: 2rem;
 }
 
-.links{
+.links-section {
   display: flex;
   flex-direction: row;
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
+  gap: 10px;
 }
 
-.links:hover{
+.links:hover {
   color: red;
+}
+
+.mini-menu-button {
+  background-color: black;
+  color: white;
+  display: none;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  max-height: 3rem;
+  max-width: 3rem;
+  font-size: 1.5rem;
+}
+
+.mini-menu-button:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.mini-menu {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mini-menu-button {
+    display: block;
+  }
+
+  .mini-menu {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    margin-right: 10px;
+    width: 8rem;
+    border-radius: 0.5rem;
+    z-index: 100;
+  }
+
+  .mini-menu.open {
+    display: flex;
+  }
+
+  .links-section {
+    flex-direction: column;
+    text-align: center;
+  }
 }

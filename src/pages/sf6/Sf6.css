@@ -4,16 +4,24 @@
   flex: 1;
 }
 
-.fighters-grid {
+.sf6-fighters-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   margin: 2rem 0;
 }
 
-.sf6-img{
+.sf6-img {
   border-radius: 0.5rem;
+  width: 30%;
+  max-width: 40%;
+  max-height: fit-content;
+}
+
+.sf6-mechanics-section p {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .home-button {
@@ -43,8 +51,13 @@
 }
 
 @media (max-width: 1024px) {
-  .fighters-grid {
+  .sf6-fighters-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sf6-fighters-grid>*:last-child:nth-child(odd) {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }
 

@@ -4,12 +4,17 @@
   flex: 1;
 }
 
-.fighters-grid {
+.mk-fighters-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  gap: 1rem;
   justify-content: center;
   margin: 2rem 0;
+}
+
+.mk-mechanics-section p {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .home-button {
@@ -39,8 +44,13 @@
 }
 
 @media (max-width: 1024px) {
-  .fighters-grid {
+  .mk-fighters-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mk-fighters-grid>*:last-child:nth-child(odd) {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }
 

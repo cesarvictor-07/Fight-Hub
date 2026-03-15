@@ -13,7 +13,7 @@
 .game-change {
   margin: 1rem;
   border-radius: 0.5rem;
-  width: 25%;
+  width: 30%;
   height: 5%;
   cursor: pointer;
 }
@@ -22,6 +22,8 @@
   flex: 1;
   overflow-y: auto;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .message {
@@ -29,8 +31,68 @@
   padding: 8px 12px;
   border-radius: 10px;
   margin-bottom: 8px;
-  max-width: 70%;
-  justify-self: flex-end;
+  max-width: 65%;
+  width: fit-content;
+  position: relative;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.message p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.message-actions {
+  bottom: 5px;
+  left: 5px;
+
+  display: flex;
+  gap: 5px;
+  margin-top: 0;
+  max-height: 0;
+
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.message:hover .message-actions {
+  margin-top: 6px;
+  max-height: 30px;
+  opacity: 1;
+}
+
+.message-actions button {
+  padding: 4px 6px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.message-user-time {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+}
+
+.message.own {
+  margin-left: auto;
+}
+
+.message-actions button:hover {
+  background: #dedede;
+}
+
+.edit-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+
+.edit-options button {
+  border-radius: 0.5rem;
 }
 
 .message span {
@@ -57,10 +119,16 @@
   margin-right: 5px;
   padding: 8px;
   border-radius: 0.5rem;
+  resize: none;
 }
 
-button {
+.send-button {
   padding: 8px 12px;
   border-radius: 1rem;
   cursor: pointer;
+  transition: 0.7s;
+}
+
+.send-button:hover {
+  transform: scale(1.02);
 }

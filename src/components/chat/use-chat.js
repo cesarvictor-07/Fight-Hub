@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import { db } from "../../services/fb/firebase";
+import { db, auth } from "../../services/fb/firebase";
 import {
   collection,
   addDoc,
   query,
   orderBy,
   onSnapshot,
-  serverTimestamp
+  serverTimestamp,
+  deleteDoc,
+  updateDoc,
+  doc
 } from "firebase/firestore";
 
 export const useChat = (selectedGame) => {
@@ -28,18 +31,32 @@ export const useChat = (selectedGame) => {
     return () => unsubscribe();
   }, [selectedGame]);
 
-  const sendMessage = async (username, message) => {
-    if (!username || !message) return;
+  const sendMessage = async (message) => {
+    const user = auth.currentUser;
+    if (!user || !message) return;
 
     await addDoc(
       collection(db, "chats", selectedGame, "messages"),
       {
-        Username: username,
+        Username: user.displayName,
         Message: message,
+        userId: user.uid,
         timestamp: serverTimestamp()
       }
     );
   };
 
-  return { messages, sendMessage };
+  const deleteMessage = async (id) => {
+    await deleteDoc(doc(
+      db, "chats", selectedGame, "messages", id)
+    );
+  }
+  const editMessage = async (id, newMessage) => {
+    const ref = doc(db, "chats", selectedGame, "messages", id);
+
+    await updateDoc(ref, {
+      Message: newMessage
+    });
+  };
+  return { messages, sendMessage, deleteMessage, editMessage };
 };

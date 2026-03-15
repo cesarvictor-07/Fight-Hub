@@ -1,0 +1,31 @@
+.rss-section {
+  flex: 1;
+}
+
+.title-text{
+  margin: 1.25rem;
+}
+
+.rss-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(-1deg, rgb(166, 166, 166), rgb(255, 42, 42));
+}
+
+.feed-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.feed-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(550deg, rgb(166, 166, 166), rgb(138, 156, 255));
+}

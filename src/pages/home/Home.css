@@ -7,8 +7,20 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
   justify-items: center;
-  margin-top: 2rem;
+  margin: 2rem;
 }
+
+.button-container>*:last-child:nth-child(3n+1) {
+  grid-column: 2;
+}
+
+/* .button-container>*:last-child(2):nth-child(3n+1) {
+  grid-column: 2;
+}
+
+.button-container>*:last-child:nth-child(3n+2) {
+  grid-column: 3;
+} */
 
 .button {
   height: 8rem;
@@ -53,7 +65,7 @@
   margin-left: 2rem;
 }
 
-.chat-section{
+.chat-section {
   justify-items: center;
 }
 
@@ -69,6 +81,30 @@
 .contact-section {
   justify-items: center;
 }
+
+.link-text:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.user-state {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.logout-button {
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  height: 2rem;
+}
+
+.logout-button:hover {
+  cursor: pointer;
+  scale: calc(1.05);
+  font-weight: bold;
+}
+
 
 /* Imagenes */
 .smash {
@@ -90,6 +126,11 @@
 @media (max-width: 1024px) {
   .button-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .button-container>*:last-child:nth-child(odd) {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }
 
