@@ -13,7 +13,7 @@ function Rss() {
           <div className="feed-container">
             <section className="feed-card">
               <h4>Fight Hub news:</h4>
-              <a className="feed-link" href="public/rss.xml" target="_blank" rel="noopener noreferrer">Fight_Hub_News</a>
+              <a className="feed-link" href="https://fight-hub-12490.web.app/rss.xml" target="_blank" rel="noopener noreferrer">Fight_Hub_News</a>
             </section>
             <section className="feed-card">
               <h4>Street Fighter 6 news:</h4>
