@@ -1,6 +1,8 @@
 # Fight Hub
 
 Fight Hub is a web about fighting games, where we show information about the game itself, its mechanics, characters and more.
+Here's a link of our page hosted via Firebase Hosting:
+https://fight-hub-12490.web.app
 
 ## About the Project
 
@@ -8,7 +10,7 @@ This project is part of a 2 year course of Multiplattform App Development, this 
 
 ## Features
 
-
+The main features of Fight Hub are the implemented Chat feature, where you can chat with other users about different games having game-specific chats to look for someone to play; our game pages where you can see a quick description of a game, its characters and mechanics; and the ability to create a user for Fight Hub (This is needed to use the chat feature).
 
 ## Built With
 

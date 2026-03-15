@@ -30,6 +30,8 @@ function Ssbu() {
         <h2>Game mechanics:</h2>
         <section className="sssbu-mechanics-section">
           <p>The Smash Bros. series is well known for their 2D plattformer style combat, in Ultimate this remains the same loved way with the addition of new small changes like the parry mechanic and directional airdodging</p>
+          <p>Here's a tutorial video on how to play!</p>
+          <iframe className="tutorial-video" src="https://www.youtube.com/embed/N3OcXuwN6nw" allowFullScreen></iframe>
         </section>
         <button className="home-button" onClick={handleClick}>Go Home</button>
       </main>

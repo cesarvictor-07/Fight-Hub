@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Noticias Fight Hub</title>
+    <title>Fight Hub News</title>
     <link>https://fight-hub-12490.web.app</link>
     <description>Latest news on the web</description>
     <language>en-en</language>
-    <lastBuildDate>14th March 2026</lastBuildDate>
+    <atom:link href="https://fight-hub-12490.web.app/rss.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 14 Mar 2026 18:30:00 GMT</lastBuildDate>
 
     <item>
       <title>Alex added to Street Fighter 6</title>
-      <link>https://fight-hub-12490.web.app</link>
+      <link>https://fight-hub-12490.web.app/news</link>
+      <guid>https://fight-hub-12490.web.app/news#alex</guid>
       <description>The newest character in Street Fighter, Alex has been added</description>
       <pubDate>Sat, 14 Mar 2026 10:00:00 GMT</pubDate>
     </item>
-
     <item>
       <title>New Smash Bros. Ultimate Content</title>
-      <link>https://fight-hub-12490.web.app</link>
-      <description></description>
+      <link>https://fight-hub-12490.web.app/news</link>
+      <guid>https://fight-hub-12490.web.app/news#smash</guid>
+      <description>Some new content so see in the smash page</description>
       <pubDate>Sat, 14 Mar 2026 18:30:00 GMT</pubDate>
     </item>
   </channel>

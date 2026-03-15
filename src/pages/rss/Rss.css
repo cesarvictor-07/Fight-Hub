@@ -2,8 +2,8 @@
   flex: 1;
 }
 
-h1 {
-  margin: 1rem;
+.title-text{
+  margin: 1.25rem;
 }
 
 .rss-container {

@@ -14,8 +14,9 @@
 
 .tekken-heat-img {
   border-radius: 1rem;
-  max-height: 20rem;
-  width: 50%;
+  width: 30%;
+  max-width: 40%;
+  max-height: fit-content;
 }
 
 .tekken-mechanics-section p {

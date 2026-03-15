@@ -14,7 +14,7 @@ function Header() {
     navigate("/user");
   }
   const GoRss = () => {
-    navigate("/news");
+    navigate("/rss");
   }
   const GoAbout = () => {
     GoHome();

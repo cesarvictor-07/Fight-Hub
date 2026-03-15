@@ -68,6 +68,6 @@ export const sf6Fighters = [
     id: 10,
     name: "Alex",
     image: alex,
-    description: "The Big Apple Brawler from New York"
+    description: "The Big Apple Brawler from New York grapplin'away anyone in his way"
   }
 ];
