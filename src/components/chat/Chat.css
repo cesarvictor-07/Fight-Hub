@@ -132,3 +132,22 @@
 .send-button:hover {
   transform: scale(1.02);
 }
+
+.export-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.export-buttons button {
+  border-radius: 0.5rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  transition: 0.5s;
+}
+
+.export-buttons button:hover {
+  cursor: pointer;
+  scale: calc(1.05);
+}
