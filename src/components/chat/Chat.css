@@ -139,10 +139,12 @@
   align-items: center;
 }
 
+.export-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .export-buttons button {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   border-radius: 0.5rem;
   height: 2rem;
   margin: 1.5rem;

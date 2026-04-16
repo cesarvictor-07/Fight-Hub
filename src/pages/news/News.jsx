@@ -1,4 +1,5 @@
 import "./News.css"
+import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { useLocation, useNavigate } from "react-router-dom";
 import logo from "../../components/img/Fight-Hub.png";
@@ -32,6 +33,7 @@ function News() {
 
   return (
     <div className="page">
+      < Header />
       <main className="news-section">
         <img className="logo-img" src={logo} alt="Fight Hub Logo" onClick={GoHome} />
         <h1 className="h1-text">Welcome to Fight Hub's news!</h1>
