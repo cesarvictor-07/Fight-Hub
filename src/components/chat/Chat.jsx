@@ -146,6 +146,17 @@ const Chat = () => {
           <button onClick={() => exportChat(selectedGame, "xml")}>
             Export XML
           </button>
+          <button onClick={() => exportChat(selectedGame, "xlsx")}>
+            Export Excel (.xlsx)
+          </button>
+
+          <button onClick={() => exportChat(selectedGame, "xls")}>
+            Export Excel (.xls)
+          </button>
+
+          <button onClick={() => exportChat(selectedGame, "ods")}>
+            Export ODS
+          </button>
         </div>
       </section>
     </>
