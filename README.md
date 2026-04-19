@@ -44,3 +44,14 @@ README: https://github.com/othneildrew/Best-README-Template
 ## Rss feed img
 ![alt text](src/components/img/image.png)
 ![alt text](src/components/img/image-2.png)
+
+## Import examples
+
+Download files with data to try and import (in the News page)
+#### Note: The links send you to the place the file is, just click the download icon from there and download the raw file.
+
+- [JSON](./data-examples/news-example-datos.json)
+- [CSV](./data-examples/news-example-datos.csv)
+- [XML](./data-examples/news-example-datos.xml)
+- [Excel](./data-examples/news-example-datos.xlsx)
+- [ODS](./data-examples/news-example-datos.ods)
