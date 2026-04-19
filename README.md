@@ -48,6 +48,7 @@ README: https://github.com/othneildrew/Best-README-Template
 ## Import examples
 
 Download files with data to try and import (in the News page)
+#### Note: The links send you to the place the file is, just click the download icon from there and download the raw file.
 
 - [JSON](./data-examples/news-example-datos.json)
 - [CSV](./data-examples/news-example-datos.csv)
