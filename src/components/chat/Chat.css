@@ -132,3 +132,26 @@
 .send-button:hover {
   transform: scale(1.02);
 }
+
+.export-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.export-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.export-buttons button {
+  border-radius: 0.5rem;
+  height: 2rem;
+  margin: 1.5rem;
+  transition: 0.5s;
+}
+
+.export-buttons button:hover {
+  cursor: pointer;
+  scale: calc(1.05);
+}

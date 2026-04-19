@@ -48,3 +48,7 @@
   max-width: 50%;
   max-height: fit-content;
 }
+
+.import-button {
+  margin: 1rem;
+}
